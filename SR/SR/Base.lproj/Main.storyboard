@@ -297,6 +297,10 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AuthLogin:" destination="ode-YT-j2h" eventType="touchUpInside" id="vDw-Ah-SwL"/>
+                                    <segue destination="bvG-YM-dej" kind="show" identifier="login" id="jiY-t9-hgp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -317,10 +321,33 @@
                             <constraint firstItem="8Bw-E3-3t7" firstAttribute="bottom" secondItem="6v9-cE-AfN" secondAttribute="top" id="rbz-c2-hgP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Login" destination="GSu-t1-Vo4" id="RtS-gm-UFk"/>
+                        <outlet property="passwordBox" destination="R2J-RA-yER" id="4m2-5O-rRJ"/>
+                        <outlet property="usernameBox" destination="euk-15-5d5" id="vzA-xT-7O6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0q-Va-7w3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="167" y="1556"/>
+        </scene>
+        <!--Auth Login Screen-->
+        <scene sceneID="sLY-hD-Y15">
+            <objects>
+                <viewController id="bvG-YM-dej" customClass="AuthLoginScreen" customModule="SR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ww-It-kaI"/>
+                        <viewControllerLayoutGuide type="bottom" id="1DB-JJ-68b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KqG-wU-47A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JqH-b9-dse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="2295"/>
         </scene>
     </scenes>
     <resources>
